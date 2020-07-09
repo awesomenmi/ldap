@@ -15,10 +15,6 @@ su -l user
 
 ```
 [root@localhost homew26]# vagrant ssh ipaserver -c 'echo password | kinit admin && ipa user-add --first="User" --last="User" --cn="User User" --password user --shell="/bin/bash"'
-
-vagrant ssh client
-su -l user
-
 Password for admin@HOME.LOCAL: 
 Password: 
 Enter Password again to verify: 
